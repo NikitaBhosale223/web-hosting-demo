@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body
+		{
+			background-image: url(img1.jpg);
+		}
+		table
+		{
+			margin-top: 150px;
+			border: 2px #09647B;
+			padding: 50px;
+			text-align: center;
+			border-radius: 15px;
+			background-color: white;
+			box-shadow: 12px 12px 12px ;
+			
+		}
+		th
+		{
+			font-size: 25px;
+			padding-bottom: 10px;
+		}
+		td
+		{
+			padding: 10px;
+		}
+		tr
+		{
+			height: 30px;
+		}
+		input
+		{
+			font-size: 15px;
+			padding-left: 10px;
+		}
+	
+	</style>
+	<!-- <script type="text/javascript">
+		function log()
+		{
+			var uname=document.getElementById("username").value;
+			var pass=document.getElementById("password").value;
+			if (uname=="admin" && pass=="admin123") {
+				alert("Logged in successfully...");
+				document.myform.submit();
+			}
+			else{
+				alert("Error :: please enter correct credentials");
+			}
+		}
+	</script> -->
+    
+</head>
+
+<body>
+<form name="myform" action="getreg.php" method="post">
+<table align="center">
+	<tr><th><u>Login</u></th></tr>
+	<tr><td><input type="text" id="username" name="username" placeholder="Username" style='height: 30px'></td></tr>
+	<tr><td><input type="password" id="password" name="password" placeholder="Password" style='height: 30px'></td></tr>
+	<tr><td><input type="submit" value="Login" name="Login" onclick="log()" style='background-color: #16DEE5 ; width: 200px; height: 40px; font-size: 20px; color: white'></td></tr>
+	<tr><td><a href="forgetpass.php" style="color: red">Forget Password?</a></td></tr>
+	<tr><td><a href="registerform.php">Register here</a></td></tr>
+</table>
+</form>
+</body>
+</html>
